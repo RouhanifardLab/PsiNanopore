@@ -82,7 +82,4 @@ After sorting, we then index the sorted **BAM** file we generated at [step 4.2](
 ```
 samtools index path/to/sorted_alignment.bam/
 ```
-# TO-DO
-  + Add a poster image
-  + Add 5-mer reference 
-  + Add Nanopolish step
+
