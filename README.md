@@ -1,11 +1,20 @@
 # PsiNanopore
 
 
-# Installation
-## R
+# System Requirement
+
+## Hardware Requirements
+package requires only a standard computer with enough RAM to support the in-memory operations.
+
+## Software Requirements
+### OS Requirements 
+This package is supported for macOS and been tested on the following systems:
+mcOS:Catalina(0.15.6)
+### R Dependecies
+#### R 
   + R (required | Version>/3.6.1 recommended)
   + Rstudio (recommended)
-## R Packages
+#### R Packages
   + ggplot2, optparse, BiocManager, Biobase, Rsamtools, BSgenome (**No action is required on your end. These Packages will be installed automatically on your system the first time you run the code (if not already installed).**)
 
 # Example
