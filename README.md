@@ -30,11 +30,11 @@ Then use the following command to get the complete instruction on the required i
 ```
 Rscript PsiDetect.R -h
 ```
-*Please note that the first time you run this it might take some time, it's because some required packages are being installed*
+*Please note that the first time you run this it might take some time (couple of minutes for our computer), it's because some required packages are being installed*
 
 *Reference genome fasta file can be downloaded from [here](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.36/)*
 
-Here is a sample command you can use to get a list of pseudouridine candidate sites from the sample data (.bam) in "demo" folder.
+Here is a sample command you can use to get a list of pseudouridine candidate sites from the sample data (.bam) in "demo" folder. It takes couple of minutes (can be variable depending on the device). 
 ```
 Rscript PsiDetect.R -f ~/Downloads/PsiNanopore-main/data/DirSeq.bam -g ~/Downloads/PsiNanopore-main/data/IVT.bam -k ~/Downloads/PsiNanopore-main/data/kmer_summary.csv -r /PATH/TO/REFERENCE/GENOME/FILE.FA -s 35599541 -e 35641526 -c chr1 -m 0.05 -o ~/Desktop/psi_candidates.csv
 ```
