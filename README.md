@@ -26,7 +26,7 @@ Rscript PsiDetect.R -h
 
 *Reference genome fasta file can be downloaded [here](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.36/)*
 
-Here is a sample command you can use to get a list of pseudouridine candidate sites from the sample data.
+Here is a sample command you can use to get a list of pseudouridine candidate sites from the sample data in "demo" file.
 ```
 Rscript PsiDetect.R -f ~/Downloads/PsiNanopore-main/data/DirSeq.bam -g ~/Downloads/PsiNanopore-main/data/IVT.bam -k ~/Downloads/PsiNanopore-main/data/kmer_summary.csv -r /PATH/TO/REFERENCE/GENOME/FILE.FA -s 35599541 -e 35641526 -c chr1 -m 0.05 -o ~/Desktop/psi_candidates.csv
 ```
