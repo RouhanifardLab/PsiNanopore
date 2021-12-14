@@ -7,9 +7,28 @@
   + R (required | Version>/3.6.1 recommended)
   + Rstudio (recommended)
 ## R Packages
-  + ggplot2, optparse, BiocManager, Biobase (**No action is required on your end. These Packages will be installed automatically on your system the first time you run the code (if not already installed).**)
+  + ggplot2, optparse, BiocManager, Biobase, Rsamtools, BSgenome (**No action is required on your end. These Packages will be installed automatically on your system the first time you run the code (if not already installed).**)
 
 # Example
+## Pseudouridine detection
+You can use this package to calculate the p-value of positions on the genome. The main input files to our tool are the aligned reads (bam files, please read the step by step guide on how to generate the bam files).
+
+First, download the package (click on the green button on top left of this page that says 'code', then click on 'Download ZIP'). Then unzip the compressed file. Next, open terminal and navigate to the directory where you've downloaded the package.
+
+```
+cd /path/to/PsiNanopore
+```
+
+Then use the following command to get the complete instruction on the required inputs:
+```
+Rscript PsiDetect.R -h
+```
+
+Here is a sample command you can use to get a list of pseudouridine candidate sites from the sample data.
+```
+Rscript PsiDetect.R -f ~/Downloads/PsiNanopore-main/data/DirSeq.bam -g ~/Downloads/PsiNanopore-main/data/IVT.bam -k ~/Downloads/PsiNanopore-main/data/kmer_summary.csv -r /PATH/TO/REFERENCE/GENOME/FILE.FA -s 35599541 -e 35641526 -c chr1 -m 0.05 -o ~/Desktop/psi_candidates.csv
+```
+
 Let's run the code on a sample data. First navigate to the path where you've downloaded the package into:
 ```
 cd /path/to/SignalView
