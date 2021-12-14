@@ -1,22 +1,22 @@
 # PsiNanopore
 You can use this package to calculate the p-value of positions on the genome. The main input files to our tool are the aligned reads (bam files, please read the step by step guide on how to generate the bam files from "Computational pipeline of DNA/RNA sequencing analysis" section).
 
-# System Requirement
+## System Requirement
 
-## Hardware Requirements
+### Hardware Requirements
 package requires only a standard computer with enough RAM to support the in-memory operations.
 
-## Software Requirements
-### OS Requirements 
+### Software Requirements
+#### OS Requirements 
 This package is supported for macOS and been tested on the following systems:
 mcOS:Catalina(0.15.6)
-### R Dependecies
-#### R 
+#### R Dependecies
+##### R 
   + R (required | Version>/3.6.1 recommended)
   + Rstudio (recommended)
-#### R Packages
+##### R Packages
   + ggplot2, optparse, BiocManager, Biobase, Rsamtools, BSgenome (**No action is required on your end. These Packages will be installed automatically on your system the first time you run the code (if not already installed).**)
-# Installation Guide
+## Installation Guide
 
 First, download the package (click on the green button on top left of this page that says 'code', then click on 'Download ZIP'). Then unzip the compressed file. Next, open terminal and navigate to the directory where you've downloaded the package.
 
