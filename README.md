@@ -38,6 +38,7 @@ Here is a sample command you can use to get a list of pseudouridine candidate si
 ```
 Rscript PsiDetect.R -f ~/Downloads/PsiNanopore-main/data/DirSeq.bam -g ~/Downloads/PsiNanopore-main/data/IVT.bam -k ~/Downloads/PsiNanopore-main/data/kmer_summary.csv -r /PATH/TO/REFERENCE/GENOME/FILE.FA -s 35599541 -e 35641526 -c chr1 -m 0.05 -o ~/Desktop/psi_candidates.csv
 ```
+*The output is a .csv file (psi_candidates.csv in demo folder) that include the targets with the pvalue of lower that specified in -m option.*
 # SignalView
 *SignalView* is a visualization tool that allows you to visualize the raw ionic signals we obtain from DNA/RNA sequencing.
 You can also plot signal intensity values using this tool. Let's run the code on a sample data. First navigate to the path where you've downloaded the package into:
