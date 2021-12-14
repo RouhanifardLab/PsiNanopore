@@ -1,5 +1,5 @@
 # PsiNanopore
-You can use this package to calculate the p-value of positions on the genome. The main input files to our tool are the aligned reads (bam files, please read the step by step guide on how to generate the bam files).
+You can use this package to calculate the p-value of positions on the genome. The main input files to our tool are the aligned reads (bam files, please read the step by step guide on how to generate the bam files from "Computational pipeline of DNA/RNA sequencing analysis" section).
 
 # System Requirement
 
