@@ -17,7 +17,7 @@ mcOS:Catalina(10.15.6)
   + R (required | Version>/3.6.1 recommended)
   + Rstudio (recommended)
 ##### R Packages
-  + ggplot2, optparse, BiocManager, Biobase, Rsamtools, BSgenome (**No action is required on your end. These Packages will be installed automatically on your system the first time you run the code (if not already installed).**)
+  + ggplot2(3.3.5), optparse(1.6.6), BiocManager(1.30.16), Biobase(2.52.0), Rsamtools(2.8.0), BSgenome(1.60.0) (**No action is required on your end. These Packages will be installed automatically on your system the first time you run the code (if not already installed).**)
 ## Installation Guide
 
 First, download the package (click on the green button on top left of this page that says 'code', then click on 'Download ZIP'). Then unzip the compressed file. Next, open terminal and navigate to the directory where you've downloaded the package.
