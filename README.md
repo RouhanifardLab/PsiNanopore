@@ -1,5 +1,5 @@
 # PsiNanopore
-
+You can use this package to calculate the p-value of positions on the genome. The main input files to our tool are the aligned reads (bam files, please read the step by step guide on how to generate the bam files).
 
 # System Requirement
 
@@ -16,10 +16,7 @@ mcOS:Catalina(0.15.6)
   + Rstudio (recommended)
 #### R Packages
   + ggplot2, optparse, BiocManager, Biobase, Rsamtools, BSgenome (**No action is required on your end. These Packages will be installed automatically on your system the first time you run the code (if not already installed).**)
-
-# Example
-## Pseudouridine detection
-You can use this package to calculate the p-value of positions on the genome. The main input files to our tool are the aligned reads (bam files, please read the step by step guide on how to generate the bam files).
+# Installation Guide
 
 First, download the package (click on the green button on top left of this page that says 'code', then click on 'Download ZIP'). Then unzip the compressed file. Next, open terminal and navigate to the directory where you've downloaded the package.
 
@@ -33,13 +30,13 @@ Rscript PsiDetect.R -h
 ```
 *Please note that the first time you run this it might take some time, it's because some required packages are being installed*
 
-*Reference genome fasta file can be downloaded [here](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.36/)*
+*Reference genome fasta file can be downloaded from [here](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.36/)*
 
-Here is a sample command you can use to get a list of pseudouridine candidate sites from the sample data in "demo" folder.
+Here is a sample command you can use to get a list of pseudouridine candidate sites from the sample data (.bam) in "demo" folder.
 ```
 Rscript PsiDetect.R -f ~/Downloads/PsiNanopore-main/data/DirSeq.bam -g ~/Downloads/PsiNanopore-main/data/IVT.bam -k ~/Downloads/PsiNanopore-main/data/kmer_summary.csv -r /PATH/TO/REFERENCE/GENOME/FILE.FA -s 35599541 -e 35641526 -c chr1 -m 0.05 -o ~/Desktop/psi_candidates.csv
 ```
-## Plotting raw signal intensities
+# SignalView
 *SignalView* is a visualization tool that allows you to visualize the raw ionic signals we obtain from DNA/RNA sequencing.
 You can also plot signal intensity values using this tool. Let's run the code on a sample data. First navigate to the path where you've downloaded the package into:
 ```
@@ -50,7 +47,7 @@ Then, run the following:
 Rscript SignalView.R -f data/sample_001.txt  -g data/sample_002.txt -s "+" -p 75814112 -c "chr4" -o "out.pdf" 
 ```
 
-# Options
+## Options
   + Run ```Rscript SignalView.R -h```  in your command line to see the description of all the available options.
  
 # Computational pipeline of DNA/RNA sequencing analysis
