@@ -3,6 +3,7 @@
 #### ====================================== ####
 opt_parser = OptionParser(option_list=option_list);
 opt = parse_args(opt_parser);
+
 n.adj.nucleotides = 7
 signal.transparency = .15
 signal.transparency2 = signal.transparency
@@ -22,3 +23,4 @@ if (opt$file!=""){
     n_samples = 2
   }
 }
+
