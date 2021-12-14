@@ -38,7 +38,6 @@ Then, run the following:
 ```
 Rscript SignalView.R -f data/sample_001.txt  -g data/sample_002.txt -s "+" -p 75814112 -c "chr4" -o "out.pdf" 
 ```
-*Please note that the first run might take longer if you don't have all the packages installed already. Be patient with your first run, next ones will be super fast!*
 
 # Options
   + Run ```Rscript SignalView.R -h```  in your command line to see the description of all the available options.
