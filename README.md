@@ -8,9 +8,10 @@ package requires only a standard computer with enough RAM to support the in-memo
 
 ### Software Requirements
 #### OS Requirements 
-This package is supported for macOS and been tested on the following systems:
+This package is supported for macOS and been tested on the following system:
 
 mcOS:Catalina(10.15.6)
+
 #### R Dependecies
 ##### R 
   + R (required | Version>/3.6.1 recommended)
