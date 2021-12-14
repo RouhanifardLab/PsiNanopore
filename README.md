@@ -23,8 +23,8 @@ Then use the following command to get the complete instruction on the required i
 Rscript PsiDetect.R -h
 ```
 *Please note that the first time you run this it might take some time, it's because some required packages are being installed*
-```
-*reference genome fasta file can be downloaded [here](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.36/)*
+
+*Reference genome fasta file can be downloaded [here](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.36/)*
 
 Here is a sample command you can use to get a list of pseudouridine candidate sites from the sample data.
 ```
