@@ -1,6 +1,5 @@
 # PsiNanopore
 
-*SignalView* is a visualization tool that allows you to visualize the raw ionic signals we obtain from DNA/RNA sequencing.
 
 # Installation
 ## R
@@ -16,7 +15,7 @@ You can use this package to calculate the p-value of positions on the genome. Th
 First, download the package (click on the green button on top left of this page that says 'code', then click on 'Download ZIP'). Then unzip the compressed file. Next, open terminal and navigate to the directory where you've downloaded the package.
 
 ```
-cd /path/to/PsiNanopore
+cd /path/to/PsiNanopore-main
 ```
 
 Then use the following command to get the complete instruction on the required inputs:
@@ -24,12 +23,14 @@ Then use the following command to get the complete instruction on the required i
 Rscript PsiDetect.R -h
 ```
 *Please note that the first time you run this it might take some time, it's because some required packages are being installed*
+*reference genome fasta file can be downloaded [here] (https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.36/)*
 
 Here is a sample command you can use to get a list of pseudouridine candidate sites from the sample data.
 ```
 Rscript PsiDetect.R -f ~/Downloads/PsiNanopore-main/data/DirSeq.bam -g ~/Downloads/PsiNanopore-main/data/IVT.bam -k ~/Downloads/PsiNanopore-main/data/kmer_summary.csv -r /PATH/TO/REFERENCE/GENOME/FILE.FA -s 35599541 -e 35641526 -c chr1 -m 0.05 -o ~/Desktop/psi_candidates.csv
 ```
 ## Plotting raw signal intensities
+*SignalView* is a visualization tool that allows you to visualize the raw ionic signals we obtain from DNA/RNA sequencing.
 You can also plot signal intensity values using this tool. Let's run the code on a sample data. First navigate to the path where you've downloaded the package into:
 ```
 cd /path/to/PsiNanopore
